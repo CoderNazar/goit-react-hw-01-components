@@ -17,7 +17,6 @@ const Image = ({ src, alt, width, height, className, circle, ...arts }) => {
 };
 
 Image.defaultProps = {
-  src: 'https://i.stack.imgur.com/l60Hf.png',
   alt: 'alt',
   className: '',
   width: 40,
@@ -26,7 +25,7 @@ Image.defaultProps = {
 };
 
 Image.propTypes = {
-  src: PropTypes.string,
+  src: PropTypes.string.isRequired,
   alt: PropTypes.string,
   className: PropTypes.string,
   width: PropTypes.number,
