@@ -1,0 +1,40 @@
+.wrapperStatistics {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperStatisticsBody {
+  display: flex;
+  width: 100%;
+}
+
+.titleStatistic {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(77, 77, 77);
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.labelStatistic {
+  color: white;
+  font-weight: 300;
+}
+
+.infoStatistic {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
