@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Table } from 'components/ui';
 import { TransactionHistoryHeader } from './TransactionHistoryHeader';
 import { TransactionHistoryBody } from './TransactionHistoryBody';
+import styles from './index.module.css';
 
 const TransactionHistory = ({ items }) => {
   const FIRST_ELEMENT = 0;
@@ -17,10 +18,12 @@ const TransactionHistory = ({ items }) => {
   }
 
   return (
-    <Table>
-      <TransactionHistoryHeader namesTaleHeader={namesTaleHeader} />
-      <TransactionHistoryBody items={items} />
-    </Table>
+    <div className={styles.wrapperTable}>
+      <Table className={styles.table}>
+        <TransactionHistoryHeader namesTaleHeader={namesTaleHeader} />
+        <TransactionHistoryBody items={items} />
+      </Table>
+    </div>
   );
 };
 

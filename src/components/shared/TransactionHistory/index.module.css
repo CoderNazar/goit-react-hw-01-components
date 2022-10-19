@@ -1,0 +1,25 @@
+.wrapperTable {
+  padding: 30px;
+}
+
+.table {
+  width: 100%;
+  box-shadow: 0px 2px 1px 5px rgba(187, 187, 190, 0.2);
+}
+
+.tableHeader {
+  background-color: rgb(106, 204, 191);
+}
+
+.tableBody tr:nth-child(2n+1) {
+  background-color: rgb(169, 172, 172);
+}
+
+.tableCell {
+  text-align: center;
+  padding: 15px;
+}
+
+.tableCell:not(:last-child) {
+  border-right: 1px solid gray;
+}
