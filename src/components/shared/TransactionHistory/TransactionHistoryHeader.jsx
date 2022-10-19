@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Table } from 'components/ui';
+import styles from './index.module.css';
 
 const TransactionHistoryHeader = ({ namesTaleHeader }) => {
   return (
-    <Table.Header>
+    <Table.Header className={styles.tableHeader}>
       <Table.Row>
         {namesTaleHeader.map((name, index) => {
-          return <Table.CellHeader key={index}>{name}</Table.CellHeader>;
+          return <Table.CellHeader className={styles.tableCell} key={index}>{name}</Table.CellHeader>;
         })}
       </Table.Row>
     </Table.Header>

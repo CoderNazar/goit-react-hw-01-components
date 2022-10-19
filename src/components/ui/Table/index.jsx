@@ -6,8 +6,8 @@ import { TableHeader } from './TableHeader';
 import { TableCellBody } from './TableCellBody';
 import { TableCellHeader } from './TableCellHeader';
 
-const TableComponent = ({ children }) => {
-  return <table>{children}</table>;
+const TableComponent = ({ children, className }) => {
+  return <table className={className}>{children}</table>;
 };
 
 TableComponent.displayName = 'Table';
@@ -17,8 +17,14 @@ TableHeader.displayName = 'Table.Header';
 TableCellBody.displayName = 'Table.CellBody';
 TableCellHeader.displayName = 'Table.CellHeader';
 
+TableComponent.defaultProps = {
+  className: '',
+};
+
+
 TableComponent.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string
 };
 
 export const Table = Object.assign(TableComponent, {

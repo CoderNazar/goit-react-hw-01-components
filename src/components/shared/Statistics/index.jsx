@@ -24,7 +24,7 @@ StatisticsBody.propTypes = {
     PropTypes.shape({
       id: PropTypes.string,
       label: PropTypes.string,
-      percentage: PropTypes.string,
+      percentage: PropTypes.number,
     })
   ),
 };

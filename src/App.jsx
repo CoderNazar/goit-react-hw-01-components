@@ -51,7 +51,24 @@ const App = () => {
   }, []);
 
   return (
-    <>{isLoader ? <Loader /> : <TransactionHistory items={transactions} />}</>
+    <>
+      {isLoader ? (
+        <Loader />
+      ) : (
+        <>
+          <Profile
+            stats={stats}
+            username={username}
+            tag={tag}
+            location={location}
+            avatar={avatar}
+          />
+          <Statistics title={'upload stats'} stats={data} />
+          <FriendList friends={friendList} />
+          <TransactionHistory items={transactions} />
+        </>
+      )}
+    </>
   );
 };
 
