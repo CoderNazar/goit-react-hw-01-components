@@ -1,0 +1,67 @@
+.wrapperProfile {
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 1px rgba(219, 219, 223, 0.2);
+  max-width: 280px;
+  max-height: 380px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.wrapperProfileHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 30px;
+}
+
+.wrapperProfileBody {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  background-color: rgb(182, 182, 182);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.labelProfile {
+  font-size: 15px;
+  color: gray;
+}
+
+.infoProfile {
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+}
+
+.item {
+  flex: 1;
+  padding: 10px 0px;
+}
+
+.item:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
+.userName {
+  font-size: 20px;
+  color: black;
+}
+
+.userTag {
+  color: gray;
+}
+
+.userLocal {
+  color: gray;
+}
+
+.userAvatar {
+  margin-bottom: 20px;
+}
